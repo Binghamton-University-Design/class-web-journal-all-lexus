@@ -7,13 +7,15 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/grid-utils.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Spartan:400,500,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/book.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:300,700,700i&display=fallback" rel="stylesheet">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="js/main.js"></script>
 
 		<style>
-
 			.grid {
+				grid-gap: 1em;
 				margin: 0 0 2em 0;
 
 			}
@@ -21,7 +23,7 @@
 				background-color:rgba(0,0,0,0.1);
 			}
 
-			.niceimage {
+			.nice-image {
 				width: 100%;
 				height: auto;
 				display: block;
@@ -32,7 +34,7 @@
 			}
 
 			.book h2 {
-				font-family: 'Spartan' , sans-serif;
+				font-family: 'Noto Sans JP', sans-serif;
 				font-weight: 900;
 				font-size: 2em;
 			}
@@ -40,6 +42,7 @@
 			.book-nav {
 				text-align: center;
 			}
+
 		</style>
 
 	</head>
@@ -52,35 +55,35 @@
 
 		<div class="wrapper">
 
-			<h1>Grid System</h1>
+			<div class="grid book">
 
-			<div class="grid">
-
-				<div class="width-12-12-m width-12-12">
+			<div class="width-12-12-m width-12-12">
 					<h2>Riddle Me This</h2>
 				</div>
 
-				<div class="width-2-12-m width-2-12">
-					
-					<div class="book-nav"><</div>
-
+			<div class="width-2-12-m width-2-12">
+				<div class="flex-content">
+					<div class="book-nav vertically-centered">
+						<img class="nice-image" src="images/Arrow_L.png" title = "left button"> </a>
+					</div>
+				</div>
 				</div>
 
 				<div class="width-8-12-m width-8-12">
-					<img class="nice-image" scr="images/placeholder.jpg" title="Riddle Me This"/>
-				</div>
+						<img class="nice-image" src="images/frontcover.png" title="Riddle Me This">
+					</div>
 
-				<div class="width-2-12-m width-2-12">
-
-					><div class="book-nav"><</div>
-					
+				<div class="width-2-12-m width-2-12">	
+					<div class="flex-content">
+						<div class="book-nav vertically-centered">
+							<a href = "book-1.html"> <img class="nice-image" src="images/Arrow_R.png" title = "right button"> </a>
+						</div>
+					</div>
 				</div>
 
 				<div class="width-12-12-m width-12-12">
-					Riddle Book Credits
+						<p class = "credit"> Riddle Me This | ARTS412 Spring 2020</p>
 				</div>
-
-
 			</div>
 		</div>
 
